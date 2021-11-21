@@ -1,4 +1,5 @@
-body {
+html,body {
+    margin: 0;
     background: #2E5572;
 }
 
@@ -9,6 +10,7 @@ body {
     left: 0;
     top: 0;
     padding: 10px;
+    z-index: 9999;
     text-align: center;
 
     background: rgba(46, 85, 114, 0.7);
@@ -49,6 +51,63 @@ body {
     line-height: 33px;
     align-items: center;
     text-align: center;
+
+    color: #FFFFFF;
+}
+
+.header-item:hover,
+.header-item:focus {
+  opacity: 0.8;
+}
+
+/***** Body *****/
+.body {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 60px;
+    /* border: 1px solid black; */
+}
+
+/***** Home Section *****/
+.home {
+    position: relative;
+    text-align: center;
+}
+
+.home-background {
+    width: 100%;
+    left: 0px;
+    right: 0px;
+
+    opacity: 0.6;
+}
+
+.home-profile {
+    position: absolute;
+    width: 25%;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.home-intro-text {
+    position: absolute;
+    width: 40%;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
 
     color: #FFFFFF;
 }
