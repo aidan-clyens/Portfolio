@@ -58,15 +58,13 @@ html,body {
     float: left;
 
     font: inherit;
-
-    color: var(--main-highlight-colour);
 }
 
 .header nav {
     float: right;
 }
 
-.header-item {
+.header a {
     display: inline-block;
     padding-left: 25px;
     padding-right: 25px;
@@ -74,7 +72,18 @@ html,body {
     font: inherit;
 
     text-decoration: none;
+}
 
+.header-item-title {
+    color: var(--main-highlight-colour);
+}
+
+.header-item-title:hover,
+.header-item-title:focus {
+  opacity: 0.8;
+}
+
+.header-item {
     color: var(--main-header-text-colour);
 }
 
