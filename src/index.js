@@ -7,7 +7,7 @@ import profile_image from './profile.jpeg'
 
 function HeaderItem(props) {
     return (
-        <a className="header-item" href="">{props.text}</a>
+        <a className="header-item" href={props.link}>{props.text}</a>
     );
 }
 
@@ -17,9 +17,9 @@ class Header extends React.Component {
             <header className="header">
                 <h1>Aidan Clyens</h1>
                 <nav>
-                    <HeaderItem text="About" />
-                    <HeaderItem text="Projects" />
-                    <HeaderItem text="Contact" />
+                    <HeaderItem text="About" link="#about" />
+                    <HeaderItem text="Projects" link="#" />
+                    <HeaderItem text="Contact" link="#" />
                 </nav>
             </header>
         );
@@ -29,11 +29,23 @@ class Header extends React.Component {
 
 function HomeSection(props) {
     return (
-        <div className="home">
+        <div className="body-section-home">
             <img className="home-background" src={background_image} />
             <img className="home-profile" src={profile_image} />
             <div className="home-intro-text">
                 Hi! My name is Aidan Clyens. I am a junior software engineer and recent graduate from the University of Waterloo.
+            </div>
+        </div>
+    );
+}
+
+function BodySection(props) {
+    return (
+        <div id={props.id} className="body-section">
+            <h1>{props.title}</h1>
+            <hr></hr>
+            <div className="body-section-content">
+                Using an introduction has several benefits. The first is that introductions can coax the user further into the website. If the introduction is colorful, well-designed and has a good title, the user will be interested in the rest of the content. The other advantage is that you can provide quick information about your business or website to new users.
             </div>
         </div>
     );
@@ -44,6 +56,9 @@ class Body extends React.Component {
         return (
             <div className="body">
                 <HomeSection />
+                <div className="body-content">
+                    <BodySection id="about" title="About" />
+                </div>
             </div>
         );
     }

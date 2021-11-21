@@ -66,15 +66,50 @@ html,body {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 60px;
-    /* border: 1px solid black; */
 }
 
-/***** Home Section *****/
-.home {
+.body-content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.body-section h1 {
+    margin: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.body-section hr {
+    margin-bottom: 15px;
+    border: 1px solid #FFFFFF;
+}
+
+.body-section-home {
     position: relative;
     text-align: center;
 }
 
+.body-section-content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+/***** Home Section *****/
 .home-background {
     width: 100%;
     left: 0px;
