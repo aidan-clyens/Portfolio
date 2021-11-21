@@ -9,6 +9,11 @@
     src: url(./coolvetica-condensed-rg.ttf);
 }
 
+@keyframes fade-in {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
 :root {
     --main-bg-colour: #2E5572;
     --main-bg-colour-opacity-90: rgba(46, 85, 114, 0.9);

@@ -27,6 +27,9 @@
     padding-left: 0;
     float: left;
 
+    animation-name: fade-in;
+    animation-duration: 5s;
+
     font: inherit;
 }
 
