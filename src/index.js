@@ -11,19 +11,17 @@ function HeaderItem(props) {
     );
 }
 
-class Header extends React.Component {
-    render() {
-        return (
-            <header className="header">
-                <h1>Aidan Clyens</h1>
-                <nav>
-                    <HeaderItem text="About" link="#about" />
-                    <HeaderItem text="Projects" link="#" />
-                    <HeaderItem text="Contact" link="#" />
-                </nav>
-            </header>
-        );
-    }
+function Header(props) {
+    return (
+        <header className="header">
+            <h1>Aidan Clyens</h1>
+            <nav>
+                <HeaderItem text="About" link="#about" />
+                <HeaderItem text="Projects" link="#" />
+                <HeaderItem text="Contact" link="#" />
+            </nav>
+        </header>
+    );
 }
 
 
@@ -51,17 +49,15 @@ function BodySection(props) {
     );
 }
 
-class Body extends React.Component {
-    render() {
-        return (
-            <div className="body">
-                <HomeSection />
-                <div className="body-content">
-                    <BodySection id="about" title="About" />
-                </div>
+function Body(props) {
+    return (
+        <div className="body">
+            <HomeSection />
+            <div className="body-content">
+                <BodySection id="about" title="About" />
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 
