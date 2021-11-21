@@ -1,9 +1,28 @@
-/***** Colours *****/
+/***** Colours and Fonts *****/
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(./coolvetica-rg.ttf);
+}
+
+@font-face {
+    font-family: 'Coolvetica Condensed';
+    src: url(./coolvetica-condensed-rg.ttf);
+}
+
 :root {
     --main-bg-colour: #2E5572;
     --main-bg-colour-opacity-70: rgba(46, 85, 114, 0.7);
     --main-highlight-colour: #FEEDC7;
-    --main-text-colour: #FFFFFF;
+    --main-header-text-colour: #FFFFFF;
+    --main-text-colour: #E7E7E7;
+
+    --main-header-font: 'Coolvetica';
+    --main-font: 'Coolvetica Condensed';
+
+    --main-header-font-size: 28px;
+    --main-section-header-font-size: 30px;
+    --main-font-size: 30px;
+    --main-intro-font-size: 38px;
 }
 
 html,body {
@@ -20,6 +39,14 @@ html,body {
     padding: 10px;
     z-index: 9999;
     text-align: center;
+    
+    font-family: var(--main-header-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--main-header-font-size);
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
 
     background: var(--main-bg-colour-opacity-70);
 }
@@ -30,13 +57,7 @@ html,body {
     padding-left: 0;
     float: left;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 37px;
-    align-items: center;
-    text-align: center;
+    font: inherit;
 
     color: var(--main-highlight-colour);
 }
@@ -50,17 +71,11 @@ html,body {
     padding-left: 25px;
     padding-right: 25px;
 
+    font: inherit;
+
     text-decoration: none;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 33px;
-    align-items: center;
-    text-align: center;
-
-    color: var(--main-text-colour);
+    color: var(--main-header-text-colour);
 }
 
 .header-item:hover,
@@ -84,20 +99,20 @@ html,body {
 .body-section h1 {
     margin: 0;
 
-    font-family: Roboto;
+    font-family: var(--main-header-font);
     font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
+    font-weight: normal;
+    font-size: var(--main-section-header-font-size);
     line-height: 49px;
     display: flex;
     align-items: center;
 
-    color: var(--main-text-colour);
+    color: var(--main-header-text-colour);
 }
 
 .body-section hr {
     margin-bottom: 15px;
-    border: 1px solid var(--main-text-colour);
+    border: 1px solid var(--main-header-text-colour);
 }
 
 .body-section-home {
@@ -106,10 +121,10 @@ html,body {
 }
 
 .body-section-content {
-    font-family: Roboto;
+    font-family: var(--main-font);
     font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
+    font-weight: normal;
+    font-size: var(--main-font-size);
     line-height: 38px;
     display: flex;
     align-items: center;
@@ -144,13 +159,13 @@ html,body {
     left: 70%;
     transform: translate(-50%, -50%);
 
-    font-family: Roboto;
+    font-family: var(--main-font);
     font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
+    font-weight: normal;
+    font-size: var(--main-intro-font-size);
     line-height: 42px;
     display: flex;
     align-items: center;
 
-    color: var(--main-text-colour);
+    color: var(--main-header-text-colour);
 }
