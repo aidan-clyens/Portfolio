@@ -19,7 +19,7 @@
     --main-bg-colour-opacity-90: rgba(46, 85, 114, 0.9);
     --main-highlight-colour: #FEEDC7;
     --main-header-text-colour: #FFFFFF;
-    --main-text-colour: #E7E7E7;
+    --main-text-colour: #EEEEEE;
 
     --main-header-font: 'Coolvetica';
     --main-font: 'Coolvetica Condensed';
@@ -27,7 +27,7 @@
     --main-header-font-size: 28px;
     --main-section-header-font-size: 30px;
     --main-font-size: 30px;
-    --main-intro-font-size: 38px;
+    --main-intro-font-size: 34px;
 }
 
 html,body {
@@ -106,12 +106,12 @@ html,body {
 
 .home-intro-text {
     position: absolute;
-    width: 40%;
+    width: 50%;
     top: 45%;
     left: 65%;
     transform: translate(-50%, -50%);
 
-    font-family: var(--main-font);
+    font-family: var(--main-header-font);
     font-style: normal;
     font-weight: normal;
     font-size: var(--main-intro-font-size);
