@@ -2,26 +2,50 @@ body {
     background: #2E5572;
 }
 
+/***** Header *****/
 .header {
-    position: absolute;
     width: 100%;
-    height: 78px;
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    display: inline;
+    margin: 0;
+    padding-left: 0;
+    float: left;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    align-items: center;
+    text-align: center;
+
+    color: #FEEDC7;
+}
+
+.header nav {
+    float: right;
 }
 
 .header-item {
-    width: 159px;
-    height: 39px;
-    top: 20px;
-    display: table-cell;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    text-decoration: none;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
+    align-items: center;
     text-align: center;
 
     color: #FFFFFF;
