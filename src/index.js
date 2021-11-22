@@ -25,18 +25,20 @@ function BodySection(props) {
             <h1>{props.title}</h1>
             <hr></hr>
             <div className="body-section-content">
-                Using an introduction has several benefits. The first is that introductions can coax the user further into the website. If the introduction is colorful, well-designed and has a good title, the user will be interested in the rest of the content. The other advantage is that you can provide quick information about your business or website to new users.
+                {props.content}
             </div>
         </div>
     );
 }
 
 function Body(props) {
+    var intro_text = "Using an introduction has several benefits. The first is that introductions can coax the user further into the website. If the introduction is colorful, well-designed and has a good title, the user will be interested in the rest of the content. The other advantage is that you can provide quick information about your business or website to new users.";
+
     return (
         <div className="body">
             <HomeSection />
             <div className="body-content">
-                <BodySection id="about" title="About" />
+                <BodySection id="about" title="About" content={intro_text}/>
             </div>
         </div>
     );

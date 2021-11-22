@@ -1,12 +1,9 @@
 /***** Colours and Fonts *****/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit:wght@300&display=swap');
+
 @font-face {
     font-family: 'Coolvetica';
     src: url(./coolvetica-rg.ttf);
-}
-
-@font-face {
-    font-family: 'Coolvetica Condensed';
-    src: url(./coolvetica-condensed-rg.ttf);
 }
 
 @keyframes fade-in {
@@ -22,11 +19,11 @@
     --main-text-colour: #EEEEEE;
 
     --main-header-font: 'Coolvetica';
-    --main-font: 'Coolvetica Condensed';
+    --main-font: 'Noto Sans', sans-serif;
 
     --main-header-font-size: 28px;
     --main-section-header-font-size: 30px;
-    --main-font-size: 30px;
+    --main-font-size: 24px;
     --main-intro-font-size: 34px;
 }
 
