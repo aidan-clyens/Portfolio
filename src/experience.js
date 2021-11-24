@@ -11,6 +11,7 @@ class ExperienceSection extends React.Component {
         super(props);
 
         var jobStates = Array.from({ length: experienceData.length }, (_, i) => i == 0 ? true : false);
+        var jobContent = experienceData[0].description.map((job, i) => <li>{job}</li>);
         var jobHeaders = experienceData.map((job, i) => <ExperienceSectionHeader key={job.title} text={job.title} selected={jobStates[i]} onClick={() => this.onJobHeaderClick(job.title)} />);
 
         this.state = {
@@ -19,6 +20,7 @@ class ExperienceSection extends React.Component {
             selectedPosition: experienceData[0].position,
             selectedDate: experienceData[0].date,
             jobHeaders: jobHeaders,
+            jobContent: jobContent,
         };
     }
 
@@ -28,6 +30,7 @@ class ExperienceSection extends React.Component {
 
         if (index >= 0) {
             var jobStates = Array.from({ length: experienceData.length }, (_, i) => i == index ? true : false);
+            var jobContent = experienceData[index].description.map((job, i) => <li>{job}</li>);
             var jobHeaders = experienceData.map((job, i) => <ExperienceSectionHeader key={job.title} text={job.title} selected={jobStates[i]} onClick={() => this.onJobHeaderClick(job.title)} />);
 
             this.setState({
@@ -36,6 +39,7 @@ class ExperienceSection extends React.Component {
                 selectedPosition: experienceData[index].position,
                 selectedDate: experienceData[index].date,
                 jobHeaders: jobHeaders,
+                jobContent: jobContent,
             });
         }
     }
@@ -51,7 +55,7 @@ class ExperienceSection extends React.Component {
                             {this.state.jobHeaders}
                         </div>
                         <div className="body-experience-divider"></div>
-                        <ExperienceSectionBody job={this.state.selectedJob} position={this.state.selectedPosition} date={this.state.selectedDate} />
+                        <ExperienceSectionBody job={this.state.selectedJob} position={this.state.selectedPosition} date={this.state.selectedDate} content={this.state.jobContent} />
                     </div>
                 </div>
             </div>
@@ -78,6 +82,9 @@ function ExperienceSectionBody(props) {
         <div className="body-experience-job-content">
             <h1>{props.position}</h1>
             <h2>{props.date}</h2>
+            <ul>
+                {props.content}
+            </ul>
         </div>
     );
 }

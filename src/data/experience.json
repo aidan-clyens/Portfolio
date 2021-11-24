@@ -3,36 +3,60 @@
         "title": "Synamedia",
         "position": "Associate Software Engineer",
         "date": "May 2021 - Present",
-        "description": ""
+        "description": [
+            "Item 1",
+            "Item 2",
+            "Item 3"
+        ]
     },
     {
         "title": "Microchip",
         "position": "Software Engineer Coop",
         "date": "Sep - Dec 2020",
-        "description": ""
+        "description": [
+            "Item 1",
+            "Item 2",
+            "Item 3"
+        ]
     },
     {
         "title": "ecobee",
         "position": "Embedded Test Developer",
         "date": "Sep - Dec 2019",
-        "description": ""
+        "description": [
+            "Item 1",
+            "Item 2",
+            "Item 3"
+        ]
     },
     {
         "title": "Klashwerks",
         "position": "Software Developer",
         "date": "Jan - Apr 2019",
-        "description": ""
+        "description": [
+            "Item 1",
+            "Item 2",
+            "Item 3"
+        ]
     },
     {
         "title": "University of Waterloo",
         "position": "Engineering PC Network Support Assistant",
         "date": "Sep - Dec 2017, May - Aug 2018",
-        "description": ""
+        "description": [
+            "Item 1",
+            "Item 2",
+            "Item 3"
+        ]
     },
     {
         "title": "DataKinetics",
         "position": "Product Owner",
         "date": "Jan - Apr 2017",
-        "description": ""
+        "description": [
+            "Item 1",
+            "Item 2",
+            "Item 3"
+        ]
     }
 ]
