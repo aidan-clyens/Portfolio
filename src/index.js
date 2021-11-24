@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Header} from './header.js'
+import { Header } from './header.js'
+import { ExperienceSection } from './experience.js'
 
 import './index.css'
 import background_image from './background_image.jpg'
@@ -19,31 +20,29 @@ function HomeSection(props) {
     );
 }
 
-function BodySection(props) {
+function AboutSection(props) {
     return (
-        <div id={props.id} className="body-section">
-            <h1>{props.title}</h1>
+        <div id="about" className="body-section">
+            <h1>About</h1>
             <hr></hr>
             <div className="body-section-content">
-                {props.content}
+                Using an introduction has several benefits. The first is that introductions can coax the user further into the website. If the introduction is colorful, well-designed and has a good title, the user will be interested in the rest of the content. The other advantage is that you can provide quick information about your business or website to new users.
             </div>
         </div>
     );
 }
 
 function Body(props) {
-    var intro_text = "Using an introduction has several benefits. The first is that introductions can coax the user further into the website. If the introduction is colorful, well-designed and has a good title, the user will be interested in the rest of the content. The other advantage is that you can provide quick information about your business or website to new users.";
-
     return (
         <div className="body">
             <HomeSection />
             <div className="body-content">
-                <BodySection id="about" title="About" content={intro_text}/>
+                <AboutSection />
+                <ExperienceSection />
             </div>
         </div>
     );
 }
-
 
 class Home extends React.Component {
     render() {

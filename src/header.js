@@ -20,6 +20,7 @@ function Header(props) {
             <HeaderItemTitle text="Aidan Clyens" link="#" />
             <nav>
                 <HeaderItem text="About" link="#about" />
+                <HeaderItem text="Experience" link="#experience" />
                 <HeaderItem text="Projects" link="#" />
                 <HeaderItem text="Contact" link="#" />
             </nav>

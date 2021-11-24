@@ -1,0 +1,56 @@
+/***** Experience Section *****/
+.body-experience {
+    width: 80%;
+    height: 300px;
+
+    margin: 0 auto;
+}
+
+.body-experience-header {
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+
+.body-experience-header-job {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    cursor: pointer;
+}
+
+.body-experience-header-job:hover,
+.body-experience-header-job:focus {
+    opacity: 0.8;
+}
+
+.body-experience-job-content {
+    width: 60%;
+    height: 100%;
+    float: left;
+
+    padding-left: 30px;
+}
+
+.body-experience-divider {
+    height: 100%;
+    float: left;
+
+    border: 1px solid var(--main-text-colour);
+}
+
+.body-experience-job-content h1 {
+    margin: 0;
+
+    font-size: var(--main-job-header-font-size);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.body-experience-job-content h2 {
+    margin: 0;
+
+    font-size: var(--main-job-date-font-size);
+    font-style: normal;
+    font-weight: normal;
+}
