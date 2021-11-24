@@ -1,5 +1,6 @@
 import React from 'react'
 
+import experienceData from './data/experience.json'
 import './experience.css'
 
 export {ExperienceSection};
@@ -9,35 +10,31 @@ class ExperienceSection extends React.Component {
     constructor(props) {
         super(props);
 
-        this.jobs = ["Synamedia", "Microchip", "ecobee", "Klashwerks", "University of Waterloo", "DataKinetics"];
-        this.positions = ["Associate Software Engineer", "Software Engineer Coop", "Embedded Test Developer", "Software Developer", "Engineering PC Network Support Assistant", "Product Owner"];
-        this.dates = ["May 2021 - Present", "Sep - Dec 2020", "Sep - Dec 2019", "Jan - Apr 2019", "Sep - Dec 2017, May - Aug 2018", "Jan - Apr 2017"];
-
-        var jobStates = Array.from({ length: this.jobs.length }, (_, i) => i == 0 ? true : false);
-        var jobHeaders = this.jobs.map((job, i) => <ExperienceSectionHeader key={job} text={job} selected={jobStates[i]} onClick={() => this.onJobHeaderClick(job)} />);
+        var jobStates = Array.from({ length: experienceData.length }, (_, i) => i == 0 ? true : false);
+        var jobHeaders = experienceData.map((job, i) => <ExperienceSectionHeader key={job.title} text={job.title} selected={jobStates[i]} onClick={() => this.onJobHeaderClick(job.title)} />);
 
         this.state = {
             jobStates: jobStates,
-            selectedJob: this.jobs[0],
-            selectedPosition: this.positions[0],
-            selectedDate: this.dates[0],
+            selectedJob: experienceData[0].title,
+            selectedPosition: experienceData[0].position,
+            selectedDate: experienceData[0].date,
             jobHeaders: jobHeaders,
         };
     }
 
     onJobHeaderClick(job) {
         console.log("Selected " + job);
-        var index = this.jobs.findIndex(element => element == job);
+        var index = experienceData.findIndex(element => element.title == job);
 
         if (index >= 0) {
-            var jobStates = Array.from({ length: this.jobs.length }, (_, i) => i == index ? true : false);
-            var jobHeaders = this.jobs.map((j, i) => <ExperienceSectionHeader key={j} text={j} selected={jobStates[i]} onClick={() => this.onJobHeaderClick(j)} />);
+            var jobStates = Array.from({ length: experienceData.length }, (_, i) => i == index ? true : false);
+            var jobHeaders = experienceData.map((job, i) => <ExperienceSectionHeader key={job.title} text={job.title} selected={jobStates[i]} onClick={() => this.onJobHeaderClick(job.title)} />);
 
             this.setState({
                 jobStates: jobStates,
-                selectedJob: job,
-                selectedPosition: this.positions[index],
-                selectedDate: this.dates[index],
+                selectedJob: experienceData[index].title,
+                selectedPosition: experienceData[index].position,
+                selectedDate: experienceData[index].date,
                 jobHeaders: jobHeaders,
             });
         }
