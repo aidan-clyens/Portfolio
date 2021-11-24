@@ -86,7 +86,6 @@ html,body {
     font-weight: normal;
     font-size: var(--main-font-size);
     line-height: 38px;
-    display: flex;
     align-items: center;
 
 

@@ -6,6 +6,7 @@ import { ExperienceSection } from './experience.js'
 import './index.css'
 import background_image from './background_image.jpg'
 import profile_image from './profile.jpeg'
+import about_data from './data/about.json'
 
 
 function HomeSection(props) {
@@ -21,12 +22,14 @@ function HomeSection(props) {
 }
 
 function AboutSection(props) {
+    var content = about_data.map((about) => <p>{about}</p>);
+
     return (
         <div id="about" className="body-section">
             <h1>About</h1>
             <hr></hr>
             <div className="body-section-content">
-                Using an introduction has several benefits. The first is that introductions can coax the user further into the website. If the introduction is colorful, well-designed and has a good title, the user will be interested in the rest of the content. The other advantage is that you can provide quick information about your business or website to new users.
+                {content}
             </div>
         </div>
     );
