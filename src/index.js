@@ -15,7 +15,9 @@ function HomeSection(props) {
             <img className="home-background" src={background_image} />
             <img className="home-profile" src={profile_image} />
             <div className="home-intro-text">
-                Hi! My name is Aidan Clyens. I am a junior software engineer and recent graduate from the University of Waterloo.
+                <p>Hi! My name is</p>
+                <p id="name">Aidan Clyens</p>
+                <p>I am a junior software engineer and recent graduate from the University of Waterloo.</p>
             </div>
         </div>
     );

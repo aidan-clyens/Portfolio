@@ -25,7 +25,8 @@
     --main-header-font-size: 28px;
     --main-section-header-font-size: 30px;
     
-    --main-intro-font-size: 34px;
+    --main-intro-font-size-1: 30px;
+    --main-intro-font-size-2: 42px;
 
     --main-job-header-font-size: 24px;
     --main-job-date-font-size: 18px;
@@ -98,7 +99,7 @@ html,body {
     left: 0px;
     right: 0px;
 
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .home-profile {
@@ -122,10 +123,21 @@ html,body {
     font-family: var(--main-header-font);
     font-style: normal;
     font-weight: normal;
-    font-size: var(--main-intro-font-size);
+    font-size: var(--main-intro-font-size-1);
     line-height: 42px;
-    display: flex;
-    align-items: center;
 
     color: var(--main-header-text-colour);
+}
+
+.home-intro-text p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    text-align: left;
+}
+
+.home-intro-text #name {
+    font-size: var(--main-intro-font-size-2);
+
+    color: var(--main-highlight-colour);
 }
