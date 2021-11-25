@@ -4,8 +4,14 @@ import { Header } from './header.js'
 import { ExperienceSection } from './experience.js'
 
 import './index.css'
-import background_image from './background_image.jpg'
-import profile_image from './profile.jpeg'
+
+import background_image from './images/background_image.jpg'
+import profile_image from './images/profile.jpeg'
+
+import linkedin_icon from './images/linkedin.png'
+import github_icon from './images/github.png'
+import email_icon from './images/email.png'
+
 import about_data from './data/about.json'
 
 
@@ -18,6 +24,11 @@ function HomeSection(props) {
                 <p>Hi! My name is</p>
                 <p id="name">Aidan Clyens</p>
                 <p>I am a junior software engineer and recent graduate from the University of Waterloo.</p>
+                <div className="home-intro-icons">
+                    <a href="https://www.linkedin.com/in/aidan-clyens/"><img src={linkedin_icon} /></a>
+                    <a href="https://github.com/aidan-clyens"><img src={github_icon} /></a>
+                    <a href="#"><img src={email_icon} /></a>
+                </div>
             </div>
         </div>
     );

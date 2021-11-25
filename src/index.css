@@ -141,3 +141,21 @@ html,body {
 
     color: var(--main-highlight-colour);
 }
+
+.home-intro-icons {
+    padding-top: 20px;
+
+    text-align: left;
+}
+
+.home-intro-icons img {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    cursor: pointer;
+}
+
+.home-intro-icons img:hover,
+.home-intro-icons img:focus {
+    transform: translate(0, -2px);
+}
