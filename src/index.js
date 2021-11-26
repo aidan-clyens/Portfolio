@@ -7,6 +7,7 @@ import './index.css'
 
 import background_image from './images/background_image.jpg'
 import profile_image from './images/profile.jpeg'
+import terrain_gen_image from './images/forest.png'
 
 import linkedin_icon from './images/linkedin.png'
 import github_icon from './images/github.png'
@@ -48,6 +49,38 @@ function AboutSection(props) {
     );
 }
 
+function ProjectsSection(props) {
+    return (
+        <div id="projects" className="body-section">
+            <h1>Projects</h1>
+            <hr></hr>
+            <ProjectsSectionContent title="Procedural Terrain Generator" image={terrain_gen_image} />
+        </div>
+    );
+}
+
+function ProjectsSectionContent(props) {
+    return (
+        <div className="body-projects-section">
+            <div className="body-projects-section-content">
+                <h1>{props.title}</h1>
+                <div className="body-projects-github-button">GitHub</div>
+            </div>
+            <br />
+            <div className="body-projects-section-content">
+                <div className="body-projects-section-content-col">
+                    <img src={terrain_gen_image}></img>
+                </div>
+                <div className="body-projects-section-content-col">
+                    <div className="body-projects-section-text">
+                        This is a Procedural Terrain Generator for use in Unity projects. Using random noise algorithms, physics simulation, random object placement, custom materials, textures, and colours an endless variety of worlds can be created using this tool.
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function Body(props) {
     return (
         <div className="body">
@@ -55,6 +88,7 @@ function Body(props) {
             <div className="body-content">
                 <AboutSection />
                 <ExperienceSection />
+                <ProjectsSection />
             </div>
         </div>
     );
