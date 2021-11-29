@@ -14,9 +14,9 @@
         "position": "Software Engineer Coop",
         "date": "Sep - Dec 2020",
         "description": [
-            "Item 1",
-            "Item 2",
-            "Item 3"
+            "Reduced the runtime of power estimation in the Libero SoC Design Suite by 5 times",
+            "Fixed software issues to improve accuracy of the FPGA power estimation tool",
+            "Applied knowledge in performance optimization, graph theory, and modeling of digital hardware"
         ]
     },
     {
@@ -24,9 +24,9 @@
         "position": "Embedded Test Developer",
         "date": "Sep - Dec 2019",
         "description": [
-            "Item 1",
-            "Item 2",
-            "Item 3"
+            "Managed QA test planning and execution for release of new SmartSensor for doors and windows",
+            "Worked on reliable and secure data transmission and pairing of SmartSensor devices using a proprietary radio protocol",
+            "Performed exploratory, integration and regression testing for ecobee products"
         ]
     },
     {
@@ -34,9 +34,9 @@
         "position": "Software Developer",
         "date": "Jan - Apr 2019",
         "description": [
-            "Item 1",
-            "Item 2",
-            "Item 3"
+            "Improved energy efficiency of Raven firmware, an OBD-II smart dashcam device",
+            "Introduced support for a new CAN-based communication protocol in embedded software running on an STM32 microcontroller",
+            "Provided the development team with a multi-threaded OBD-II simulator developed using Python"
         ]
     },
     {
@@ -44,9 +44,9 @@
         "position": "Engineering PC Network Support Assistant",
         "date": "Sep - Dec 2017, May - Aug 2018",
         "description": [
-            "Item 1",
-            "Item 2",
-            "Item 3"
+            "Initiated the development of a proposed safety system for the student machine shop",
+            "Designed a network of RFID devices using Arduino micro-controllers with C++ for the software",
+            "Assisted engineering students and faculty at the IT consulting office"
         ]
     },
     {
@@ -54,9 +54,8 @@
         "position": "Product Owner",
         "date": "Jan - Apr 2017",
         "description": [
-            "Item 1",
-            "Item 2",
-            "Item 3"
+            "Built an online interactive voice response system using PHP and MySQL for customer support",
+            "Used Twilio and SendGrid tools and deployed the application using Heroku"
         ]
     }
 ]
