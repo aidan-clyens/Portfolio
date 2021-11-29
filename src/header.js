@@ -22,7 +22,6 @@ function Header(props) {
                 <HeaderItem text="About" link="#about" />
                 <HeaderItem text="Experience" link="#experience" />
                 <HeaderItem text="Projects" link="#projects" />
-                <HeaderItem text="Contact" link="#" />
             </nav>
         </header>
     );
