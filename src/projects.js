@@ -17,7 +17,7 @@ export {ProjectsSection}
 
 function ProjectsSection(props) {
     var projects = projects_data.map(
-        (project, i) => <ProjectsSectionContent key={project.title} title={project.title} image={project_images[project.image]} description={project.description} link={project.github} />
+        (project, i) => <ProjectsSectionContent key={project.title} title={project.title} image={project_images[project.image]} description={project.description} tech={project.tech} link={project.github} />
     );
 
     return (
@@ -30,6 +30,10 @@ function ProjectsSection(props) {
 }
 
 function ProjectsSectionContent(props) {
+    var tech = props.tech.map(
+        (t, i) => <div key={i}>{t}</div>
+    );
+
     return (
         <div className="body-projects-section">
             <div className="body-projects-section-content">
@@ -43,7 +47,12 @@ function ProjectsSectionContent(props) {
                 </div>
                 <div className="body-projects-section-content-col">
                     <div className="body-projects-section-text">
-                        {props.description}
+                        <p>
+                            {props.description}
+                        </p>
+                        <div className="body-projects-section-text-tech">
+                            {tech}
+                        </div>
                     </div>
                 </div>
             </div>
