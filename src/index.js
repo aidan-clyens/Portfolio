@@ -4,7 +4,7 @@ import { Header } from './header.js'
 import { ExperienceSection } from './experience.js'
 import { ProjectsSection } from './projects.js'
 
-import './index.css'
+import './css/index.css'
 
 import background_image from './images/background_image.jpg'
 import profile_image from './images/profile.jpeg'

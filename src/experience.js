@@ -1,7 +1,7 @@
 import React from 'react'
 
 import experienceData from './data/experience.json'
-import './experience.css'
+import './css/experience.css'
 
 export {ExperienceSection};
 

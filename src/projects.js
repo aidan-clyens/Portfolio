@@ -1,4 +1,4 @@
-import './projects.css'
+import './css/projects.css'
 
 import terrain_gen_image from './images/forest.png'
 import gameboy_image from './images/TetrisGame.png'
