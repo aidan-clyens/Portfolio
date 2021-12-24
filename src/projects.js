@@ -1,7 +1,7 @@
 import './projects.css'
 
 import terrain_gen_image from './images/forest.png'
-import gameboy_image from './images/emulator_youtube_thumbnail.PNG'
+import gameboy_image from './images/TetrisGame.png'
 
 import projects_data from './data/projects.json'
 
