@@ -5,6 +5,7 @@ import { ExperienceSection } from './experience.js'
 import { ProjectsSection } from './projects.js'
 
 import './css/index.css'
+import './css/mobile/index.css'
 
 import background_image from './images/background_image.jpg'
 import profile_image from './images/profile.jpeg'

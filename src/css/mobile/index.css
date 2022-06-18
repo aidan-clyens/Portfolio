@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1024px) {
+    .body-content {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .body-section-content {
+        width: 90%;
+        font-size: var(--main-font-size-mobile);
+        line-height: 34px;
+    }
+}
