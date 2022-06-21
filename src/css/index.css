@@ -36,8 +36,11 @@
     --main-job-date-font-size: 18px;
     --main-job-content-font-size: 20px;
 
+    --main-project-header-font-size: 28px;
+
     /* Mobile Font Sizes*/
     --main-font-size-mobile: 20px;
+    --main-font-size-small-mobile: 18px;
 
     --main-intro-font-size-1-mobile: 24px;
     --main-intro-font-size-2-mobile: 30px;
@@ -45,6 +48,8 @@
     --main-job-header-font-size-mobile: 22px;
     --main-job-date-font-size-mobile: 18px;
     --main-job-content-font-size-mobile: 16px;
+
+    --main-project-header-font-size-mobile: 22px;
 }
 
 html,body {

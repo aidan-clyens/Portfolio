@@ -4,6 +4,15 @@
     display: table;
 }
 
+.body-projects-section-header {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--main-project-header-font-size);
+
+    color: var(--main-text-colour);
+}
+
 .body-projects-section-content {
     position: relative;
     width: auto;

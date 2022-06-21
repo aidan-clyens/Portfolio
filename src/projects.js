@@ -1,4 +1,5 @@
 import './css/projects.css'
+import './css/mobile/projects.css'
 
 import terrain_gen_image from './images/forest.png'
 import gameboy_image from './images/TetrisGame.png'
@@ -37,7 +38,7 @@ function ProjectsSectionContent(props) {
     return (
         <div className="body-projects-section">
             <div className="body-projects-section-content">
-                <h1>{props.title}</h1>
+                <h1 className="body-projects-section-header">{props.title}</h1>
                 <a href={props.link}><div className="body-projects-github-button">GitHub</div></a>
             </div>
             <br />
