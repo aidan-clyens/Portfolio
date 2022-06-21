@@ -22,7 +22,7 @@ function ProjectsSection(props) {
 
     return (
         <div id="projects" className="body-section">
-            <h1>Projects</h1>
+            <h1 className="body-section-header">Projects</h1>
             <hr></hr>
             {projects}
         </div>

@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1024px) {
+    .body-experience {
+        height: 100%;
+    }
+
+    .body-experience-job-content {
+        width: 100%;
+        padding-left: 10px;
+
+        animation-name: fade-in;
+        animation-duration: 2s;
+    }
+
+    .body-experience-job-content h1 {
+        font-size: var(--main-job-header-font-size-mobile);
+    }
+
+    .body-experience-job-content h2 {
+        font-size: var(--main-job-date-font-size-mobile);
+    }
+
+    .body-experience-job-content ul {
+        font-size: var(--main-job-content-font-size-mobile);
+    }
+}

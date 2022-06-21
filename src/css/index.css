@@ -41,6 +41,10 @@
 
     --main-intro-font-size-1-mobile: 24px;
     --main-intro-font-size-2-mobile: 30px;
+
+    --main-job-header-font-size-mobile: 22px;
+    --main-job-date-font-size-mobile: 18px;
+    --main-job-content-font-size-mobile: 16px;
 }
 
 html,body {
@@ -63,7 +67,7 @@ html,body {
     margin-right: 10%;
 }
 
-.body-section h1 {
+.body-section-header {
     display: block;
     margin: 0;
     margin-top: -60px;

@@ -41,7 +41,7 @@ function AboutSection(props) {
 
     return (
         <div id="about" className="body-section">
-            <h1>About</h1>
+            <h1 className="body-section-header">About</h1>
             <hr></hr>
             <div className="body-section-content">
                 {content}
