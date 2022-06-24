@@ -116,9 +116,6 @@ html,body {
 /***** Home Section *****/
 .home-background {
     width: 100%;
-    left: 0px;
-    right: 0px;
-
     opacity: 0.4;
 }
 
