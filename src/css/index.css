@@ -108,7 +108,6 @@ html,body {
     font-weight: normal;
     font-size: var(--main-font-size);
     line-height: 38px;
-    align-items: center;
 
     color: var(--main-text-colour);
 }
